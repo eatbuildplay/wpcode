@@ -1,15 +1,21 @@
 <?php get_header(); ?>
 
-<h1>Welcome to WPCode</h1>
-<p>You're in the right place to learn to code in WP for free baby!</p>
-
-<h3>---------- LOOP CONTENT BELOW ---------</h3>
-
 <?php
 if ( have_posts() ) :
   while ( have_posts() ) : the_post();
-    the_title();
-    the_content();
+?>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="main-content">
+        <?php the_content(); ?>
+      </div>
+    </div><!-- / .col-xy -->
+  </div><!-- / .row -->
+</div><!-- / .container -->
+
+<?php
   endwhile;
 endif;
 ?>
