@@ -20,16 +20,20 @@
 		<div class="container">
 	    <div class="row">
 
-				<div class="col-md-6">
+				<div class="col-md-3">
 					<a id="site-logo-link" href="<?php print site_url(); ?>">
 				    <div>WP <i class="fas fa-code"></i> CODE</div>
 					</a>
 				</div>
 
-				<div class="col-md-6">
-	        <div class="d-flex justify-content-end">
-	          <i style="color: #797979; font-size: 1.5em" class="fab fa-wordpress-simple fa-3x"></i>
-	        </div>
+				<div class="col-md-9">
+
+					<?php
+						wp_nav_menu([
+							'theme_location' => 'primary'
+						]);
+					?>
+
 	      </div>
 
 			</div>

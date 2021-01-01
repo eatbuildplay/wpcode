@@ -8,13 +8,13 @@ body {
 
 header.site-header {
   background: #484848;
-  font-size: 2.2em;
   color: #FFF;
   padding: 20px;
 	margin: 0 0 50px 0;
 }
 
 #site-logo-link {
+	font-size: 2.2em;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -31,4 +31,27 @@ footer.site-footer {
 
 footer.site-footer .copyright {
   font-size: 0.8em;
+}
+
+
+/* Header Menu */
+.menu-primary-container ul {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+.menu-primary-container ul, .menu-primary-container li {
+	list-style: none;
+}
+.menu-primary-container li {
+	display: inline-block;
+	margin: 0 6px;
+	padding: 8px 12px;
+	background: #C9C9C9;
+}
+.menu-primary-container li:hover {
+	background: #B9B9B9;
+}
+.menu-primary-container li a {
+	color: #FFF;
+	text-decoration: none;
 }

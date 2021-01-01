@@ -1,5 +1,12 @@
 <?php
 
+register_nav_menus(
+  [
+    'primary' => __( 'Primary Menu' ),
+    'secondary' => __( 'Seconday Menu' )
+  ]
+);
+
 add_action('wp_enqueue_scripts', 'wpcodeScripts');
 
 function wpcodeScripts() {
